@@ -1,4 +1,7 @@
 @media screen and (min-width: 400px) {
+  .topcardholder {
+    visibility: hidden;
+  }
   .header-container {
     .topnav, .dropdown-content, .dropbtn {
       font-size: 12px;
@@ -22,15 +25,18 @@
 }
 
 @media screen and (max-width: 615px) {
+  .topcardholder {
+    visibility: hidden;
+  }
   .timeline, .timelinetitle {
     display: none;
   }
 }
 
 @media screen and (max-width: 890px) {
-  /* .topcardholder {
+  .topcardholder {
     visibility: hidden;
-  } */
+  }
   .header-container {
     h1 {
       font-size: 60px;
@@ -42,8 +48,10 @@
   
 }
 
-
 @media screen and (min-width: 891px) {
+  .topcardholder {
+    visibility: visible;
+  }
   .header-container {
     h1 {
       font-size: 60px;
@@ -63,12 +71,12 @@
       font-size: 20px;
     }
   }
-  .topcardholder {
-    visibility: visible;
-  }
 }
 
 @media screen and (min-width: 950px) {
+  .topcardholder {
+    visibility: visible;
+  }
   .header-container {
     h1 {
       font-size: 65px;
@@ -80,6 +88,9 @@
 }
 
 @media screen and (min-width: 1100px) {
+  .topcardholder {
+    visibility: visible;
+  }
   .header-container {
     h1 {
       font-size: 75px;
