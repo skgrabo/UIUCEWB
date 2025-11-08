@@ -1,7 +1,4 @@
-@media screen and (min-width: 100px) {
-  .topcardholder {
-    visibility: hidden;
-  }
+@media screen and (min-width: 400px) {
   .header-container {
     .topnav, .dropdown-content, .dropbtn {
       font-size: 12px;
@@ -22,7 +19,6 @@
       border-radius: 20px;
       width: 120px;
   }
-  
 }
 
 @media screen and (max-width: 615px) {
@@ -32,9 +28,9 @@
 }
 
 @media screen and (max-width: 890px) {
-  .topcardholder {
+  /* .topcardholder {
     visibility: hidden;
-  }
+  } */
   .header-container {
     h1 {
       font-size: 60px;
@@ -72,7 +68,6 @@
   }
 }
 
-
 @media screen and (min-width: 950px) {
   .header-container {
     h1 {
@@ -94,7 +89,6 @@
     }
   }
 }
-
 
 .topnav {
   overflow: hidden;
@@ -228,8 +222,6 @@ h1, h2, h3, h4, h5, h6, p {
   top: 650px;
   z-index: 1;
 }
-
-
 
 .timeline {
   position: relative;
