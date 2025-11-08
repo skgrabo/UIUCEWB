@@ -67,6 +67,9 @@
       font-size: 20px;
     }
   }
+  .topcardholder {
+    visibility: visible;
+  }
 }
 
 
