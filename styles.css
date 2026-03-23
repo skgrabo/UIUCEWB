@@ -112,7 +112,7 @@
 }
 
 .header-container {
-  background-image: url(./ewbackground.jpg);
+  background-image: url(./images/ewbackground.jpg);
   background-size: cover;
 }
 
@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .lower-container {
-    background-image: url(./worldbackground.png);
+    background-image: url(./images/worldbackground.png);
     background-repeat: repeat-y;
     background-size: 100% auto;
 }
