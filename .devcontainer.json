@@ -1,0 +1,8 @@
+{
+    "name": "EWB",
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "workspaceFolder": "/workspaces/EWB",
+    "postCreateCommand": "cd /workspaces/EWB",
+    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+    "remoteUser": "vscode"
+}
