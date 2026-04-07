@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>UIUC EWB</title>
+        <title>UIUC EWB | Fundraising</title>
 </head>
 <body >
     <div class="header-container" style="padding-bottom: 20px;">
          <div class="topnav">
-            <a class="home" href="index.html"><img src="/images/whitelogo.png" alt="EWB logo" height="40"></a>
+            <a class="home" href="index.html"><img src="images/whitelogo.png" alt="EWB logo" height="40"></a>
             <a href="index.html">Home</a>
              <div class="dropdown">
                 <button class="dropbtn">Projects▾</button>
@@ -27,41 +30,41 @@
             </div> 
             <a class="volunteer" href="VolunteerPage.html">Volunteer</a>
             <a class="sponsor" href="SponsorPage.html">Sponsor</a>
-            <button class="donate" onclick="location.href='donate.html'">Donate</button>
+            <button class="donate" onclick="window.location.href='https://support.ewb-usa.org/'">Donate</button>
         </div>
         <div class="header-content">
-            <h1>Header</h1>
-            <h2>Subheader</h2>
+            <div class="container">
+                <h1>Fundraising</h1>
+                <h2>Weekly Meeting Location and Time:<br>Everitt 3217 | Thursdays 7:00 – 8:00 PM</h2>
+            </div>
         </div>
     </div>
-    <div class="lower-content">
-            <h1>Main Text Header</h1>
-            <p>Main text content goes here.</p>
-            <h1>Meet the Board</h1>
-            <p style="font-size: 25px;">Learn about the talented team that helps manage our organization and ensures that our projects run smoothly!</p>
-        </div>
-        <div class="cardholder" style="padding-bottom: 40px;">
-                <div class="card">
-                    <img src="" alt="Photo" style="width:100%; border-radius: 20px 20px 0 0;">
-                    <div class="cardcontainer">
-                        <h3>Name</h3>
-                        <p>desc</p>
-                    </div>
+    <main class="page">
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Semester Goals</h2>
+                <div class="section-text" style="text-align: left; width: min(966px, 100%);">
+                    <ul style="margin: 0; padding-left: 22px;">
+                        <li>Host the 5K.</li>
+                        <li>Increase our number of sponsors.</li>
+                        <li>Broaden our LinkedIn outreach program.</li>
+                        <li>Do more joint collaboration with other groups on campus.</li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <img src="" alt="Photo" style="width:100%; border-radius: 20px 20px 0 0;">
-                    <div class="cardcontainer">
-                        <h3>Name</h3>
-                        <p>desc</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="Photo" style="width:100%; border-radius: 20px 20px 0 0;">
-                    <div class="cardcontainer">
-                        <h3>Name</h3>
-                        <p>desc</p>
-                    </div>
-                </div> 
-        </div>
-    </div>
+            </div>
+        </section>
+
+        <section class="contact-block">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Project Leads:</p>
+                <p>Project Email:</p>
+                <p>Instagram:</p>
+                <p>Donor Newsletter:</p>
+                <p>We Are a Thrivent Charity:</p>
+                <p>Support Us:</p>
+            </div>
+        </section>
+    </main>
 </body>
+</html>
