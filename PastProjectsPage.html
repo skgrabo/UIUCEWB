@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>UIUC EWB</title>
+        <title>UIUC EWB | Past Projects</title>
 </head>
 <body >
     <div class="header-container" style="padding-bottom: 20px; background-image: url(./images/ewbackground.jpg);">
          <div class="topnav">
-            <a class="home" href="index.html"><img src="/images/whitelogo.png" alt="EWB logo" height="40"></a>
+            <a class="home" href="index.html"><img src="images/whitelogo.png" alt="EWB logo" height="40"></a>
             <a href="index.html">Home</a>
              <div class="dropdown">
                 <button class="dropbtn">Projects▾</button>
@@ -27,41 +30,36 @@
             </div> 
             <a class="volunteer" href="VolunteerPage.html">Volunteer</a>
             <a class="sponsor" href="SponsorPage.html">Sponsor</a>
-            <button class="donate" onclick="location.href='donate.html'">Donate</button>
+            <button class="donate" onclick="window.location.href='https://support.ewb-usa.org/'">Donate</button>
         </div>
         <div class="header-content">
-            <h1>Header</h1>
-            <h2>Subheader</h2>
+            <div class="container">
+                <h1>Past Projects</h1>
+            </div>
         </div>
     </div>
-    <div class="lower-content">
-            <h1>Main Text Header</h1>
-            <p>Main text content goes here.</p>
-            <h1>Meet the Board</h1>
-            <p style="font-size: 25px;">Learn about the talented team that helps manage our organization and ensures that our projects run smoothly!</p>
-        </div>
-        <div class="cardholder" style="padding-bottom: 40px;">
-                <div class="card">
-                    <img src="" alt="Photo" style="width:100%; border-radius: 20px 20px 0 0;">
-                    <div class="cardcontainer">
-                        <h3>Name</h3>
-                        <p>desc</p>
-                    </div>
+    <main class="page">
+        <section class="section" style="padding-bottom: 20px;">
+            <div class="container" style="text-align: center;">
+                <img src="images/figma/past-projects-map.jpg" alt="Interactive map" style="width: min(740px, 100%); border-radius: 24px; box-shadow: var(--card-shadow); margin: 0 auto;">
+                <p style="margin-top: 10px; font-size: 18px; color: rgba(33,37,41,0.75);">Interactive Map</p>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 30px;">
+            <div class="container">
+                <h2 class="section-title" style="font-size: 32px;">Click on a Past Project to Read About It:</h2>
+                <div class="section-text" style="width: min(720px, 100%);">
+                    <p style="margin: 18px 0 0; font-weight: 800;">Odisha India Biofuel Electrification Project (2003 – 2005)</p>
+                    <p style="margin: 12px 0 0; font-weight: 800;">Adu Achi Nigeria Water Distribution Project (2005 – 2009)</p>
+                    <p style="margin: 12px 0 0; font-weight: 800;">Socorro Guatemala Biosand Filter Project (2008 – 2010)</p>
+                    <p style="margin: 12px 0 0; font-weight: 800;">Ntisaw Water and Sanitation Project (2008 – 2014)</p>
+                    <p style="margin: 12px 0 0; font-weight: 800;">Soppo Likoko Electrification Projects (2013 – 2020)</p>
+                    <p style="margin: 12px 0 0; font-weight: 800;">Chichimuch Water Distribution Project (2014 – 2020)</p>
+                    <p style="margin: 12px 0 0; font-weight: 800;">Guatemala Sanitation Project (2020 – 2024)</p>
                 </div>
-                <div class="card">
-                    <img src="" alt="Photo" style="width:100%; border-radius: 20px 20px 0 0;">
-                    <div class="cardcontainer">
-                        <h3>Name</h3>
-                        <p>desc</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="Photo" style="width:100%; border-radius: 20px 20px 0 0;">
-                    <div class="cardcontainer">
-                        <h3>Name</h3>
-                        <p>desc</p>
-                    </div>
-                </div> 
-        </div>
-    </div>
+            </div>
+        </section>
+    </main>
 </body>
+</html>

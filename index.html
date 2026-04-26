@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>UIUC EWB</title>
@@ -41,19 +44,15 @@
                 <button class="dropbtn">Projects▾</button>
                 <div class="dropdown-content">
                     <a href="MalawiPage.html">Malawi Structures</a>
-                    <br>
                     <a href="RwandaPage.html">Rwanda</a>
-                    <br>
                     <a href="WoodfordPage.html">Woodford Water Supply</a>
-                    <br>
                     <a href="FundraisingPage.html">Fundraising</a>
-                    <br>
                     <a href="PastProjectsPage.html">Past Projects</a>
                 </div>
             </div> 
             <a class="volunteer" href="VolunteerPage.html">Volunteer</a>
             <a class="sponsor" href="SponsorPage.html">Sponsor</a>
-            <button class="donate" onclick="location.href='donate.html'">Donate</button>
+            <button type="button" class="donate" onclick="window.location.href='https://support.ewb-usa.org/'">Donate</button>
         </div>
         <div class="header-content">
             <h1>Building a Better World</h1>
@@ -62,13 +61,15 @@
             <button style="border: 2px solid white; background-color: transparent;">Volunteer</button>
         </div>
     </div>
-    <div class="lower-container" style="padding-top: 20px;">
+    </div>
+
+    <div class="page page--home" id="main">
         <div class="lower-content">
             <h1>Our Mission</h1>
             <p style="font-size: 25px;">EWB-USA supports community-driven development programs worldwide by collaborating with local partners to design and implement sustainable engineering projects, while creating transformative experiences and responsible leaders.</p>
             <h1>Our Vision</h1>
             <p style="font-size: 25px;">A world in which the communities we serve have the capacity to sustainably meet their basic human needs, and where our members have enriched global perspectives through their interactions with EWB-USA initiatives.</p>
-            <h1>Ongoing Projects</h1>
+            <h1 id="ongoing-projects">Ongoing Projects</h1>
             <p style="font-size: 25px;">EWB-UIUC partners with communities around the world to address critical infrastructure needs.</p>
 
         </div>
@@ -116,49 +117,49 @@
                     <div class="content">
                         <h2>2003-2005</h2>
                         <p>The Odisha Biofuel Project provided a source of electricity for a community of 750 residents!</p>
-                        <a href="url">Learn More -></a>
+                        <a href="PastProjectsPage.html" class="link-learn-more">Learn more<svg class="icon-arrow" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
                     </div>
                 </div>
                 <div class="timelinecontainer right">
                     <div class="content">
                         <h2>2005-2009</h2>
                         <p>The Adu Achi Water Distribution system project provided a source of clean water to a community of 3000! Originally, community members had to trek 3 kilometers daily for potable water.</p>
-                        <a href="url">Learn More -></a>
+                        <a href="PastProjectsPage.html" class="link-learn-more">Learn more<svg class="icon-arrow" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
                     </div>
                 </div>
                 <div class="timelinecontainer left">
                     <div class="content">
                         <h2>2008-2010</h2>
                         <p>The Socorro Biosand Filter Project in Guatemala improved drinking water quality for over 450 people by installing 385 biosand water filters across 7 communities!</p>
-                        <a href="url">Learn More -></a>
+                        <a href="PastProjectsPage.html" class="link-learn-more">Learn more<svg class="icon-arrow" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
                     </div>
                 </div>
                 <div class="timelinecontainer right">
                     <div class="content">
                         <h2>2008-2014</h2>
                         <p>The Ntisaw Water and Sanitation Project in Nigeria provided a clean drinking water source for over 1500 community members through the installation of spring boxes and water taps!</p>
-                        <a href="url">Learn More -></a>
+                        <a href="PastProjectsPage.html" class="link-learn-more">Learn more<svg class="icon-arrow" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
                     </div>
                 </div>
                 <div class="timelinecontainer left">
                     <div class="content">
                         <h2>2013-2020</h2>
                         <p>The Soppo Likoko Electrification Project in Cameroon extended a local transmission line and installed a transformer in a local village, providing over 250 people with a stable source of electricity!</p>
-                        <a href="url">Learn More -></a>
+                        <a href="PastProjectsPage.html" class="link-learn-more">Learn more<svg class="icon-arrow" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
                     </div>
                 </div>
                 <div class="timelinecontainer right">
                     <div class="content">
                         <h2>2014-2020</h2>
                         <p>The Chichimuch Water Distribution project identified a new source of water in a canyon and built a transportation system using spring boxes for a village of 374 in Guatemala!</p>
-                        <a href="url">Learn More -></a>
+                        <a href="PastProjectsPage.html" class="link-learn-more">Learn more<svg class="icon-arrow" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
                     </div>
                 </div>
                 <div class="timelinecontainer left">
                     <div class="content">
                         <h2>2014-2020</h2>
                         <p>The Guatemala Sanitation Project built a bathroom and sanitation system for a local school in the Huitancito village. This project involved installing running water, a septic tank, an infiltration well, and the bathroom itself.</p>
-                        <a href="url">Learn More -></a>
+                        <a href="PastProjectsPage.html" class="link-learn-more">Learn more<svg class="icon-arrow" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
                     </div>
                 </div>
                 <div class="timelinecontainer right">
@@ -277,6 +278,40 @@
                         <p><i>Chemical Engineering</i></p>
                     </div>
                 </div>
+                </div>
         </div>
     </div>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <h2 class="site-footer__heading">Contact Us</h2>
+            <nav class="site-footer__rows" aria-label="Contact links">
+                <div class="site-footer__row">
+                    <span class="site-footer__label">Project Leads:</span>
+                    <a href="VolunteerPage.html">Volunteer &amp; get involved</a>
+                </div>
+                <div class="site-footer__row">
+                    <span class="site-footer__label">Project Email:</span>
+                    <a href="mailto:ewb.uiuc.evp@gmail.com">ewb.uiuc.evp@gmail.com</a>
+                </div>
+                <div class="site-footer__row">
+                    <span class="site-footer__label">Instagram:</span>
+                    <a href="https://www.instagram.com/ewb.uiuc/" target="_blank" rel="noopener noreferrer">@ewb.uiuc</a>
+                </div>
+                <div class="site-footer__row">
+                    <span class="site-footer__label">Donor Newsletter:</span>
+                    <a href="https://forms.gle/b8NH8QFgw7QYhwrY8" target="_blank" rel="noopener noreferrer">Subscribe</a>
+                </div>
+                <div class="site-footer__row">
+                    <span class="site-footer__label">We Are a Thrivent Charity:</span>
+                    <a href="https://www.thriventcharitable.org/" target="_blank" rel="noopener noreferrer">Thrivent Charitable</a>
+                </div>
+                <div class="site-footer__row">
+                    <span class="site-footer__label">Support Us:</span>
+                    <a href="https://support.ewb-usa.org/" target="_blank" rel="noopener noreferrer">Donate</a>
+                </div>
+            </nav>
+        </div>
+    </footer>
 </body>
+</html>
