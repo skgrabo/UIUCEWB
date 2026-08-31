@@ -32,23 +32,45 @@
             <a class="sponsor" href="SponsorPage.html">Sponsor</a>
             <button class="donate" onclick="window.location.href='https://support.ewb-usa.org/'">Donate</button>
         </div>
+        <div class="smalltopnav">
+            <div class="smalldropdown">
+                <button class="smalldropbtn" style=" color: white; " onclick="showcontent()">Menu▾</button>
+                <div class="smalldropdown-content">
+                    <a href="index.html">Home</a>
+                    <br>
+                    <a href="MalawiPage.html">Malawi Structures</a>
+                    <br>
+                    <a href="RwandaPage.html">Rwanda</a>
+                    <br>
+                    <a href="WoodfordPage.html">Woodford Water Supply</a>
+                    <br>
+                    <a href="FundraisingPage.html">Fundraising</a>
+                    <br>
+                    <a href="PastProjectsPage.html">Past Projects</a>
+                    <br>
+                    <a href="VolunteerPage.html">Volunteer</a>
+                    <br>
+                    <a href="SponsorPage.html">Sponsor</a>
+                </div>
+            </div>
+        </div>
         <div class="header-content">
             <div class="container">
                 <h1>Past Projects</h1>
             </div>
         </div>
     </div>
-    <main class="page">
+    <main class="page" >
         <section class="section" style="padding-bottom: 20px;">
             <div class="container" style="text-align: center;">
-                <img src="images/figma/past-projects-map.jpg" alt="Interactive map" style="width: min(740px, 100%); border-radius: 24px; box-shadow: var(--card-shadow); margin: 0 auto;">
+                <img src="images/figma/past-projects-map.jpg" alt="Interactive map" style="width: 50%; border-radius: 24px; box-shadow: var(--card-shadow); margin: 0 auto;">
             </div>
         </section>
 
         <section class="section" style="padding-top: 30px;">
             <div class="container">
                 <h2 class="section-title" style="font-size: 32px;">Click on a Past Project to Read About It:</h2>
-                <div class="section-text" style="width: min(720px, 100%);">
+                <div class="section-text" style="width: min(720px, 80%);">
                     <button class="accordion">Odisha India Biofuel Electrification Project (2003 – 2005)</button>
                     <div class="accordionpanel">
                         <p>Odisha (formerly Orissa) is a state in eastern India on the Bay of Bengal, and consists of many tribal cultures and ancient Hindu temples. Despite the rich culture in the region, countless residents in villages did not have access to electricity, which limited many daily activities to daylight hours only and decreased the villagers’ overall quality of life.
@@ -147,7 +169,7 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the accordionpanel */
-    this.classList.toggle("active");
+    this.classList.toggle("active_accordion");
 
     /* Toggle between hiding and showing the active accordionpanel */
     var accordionpanel = this.nextElementSibling;
@@ -158,4 +180,15 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 } 
+</script>
+
+<script>
+    function showcontent() {
+        var content = document.querySelector('.smalldropdown-content');
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+        } else {
+            content.style.display = 'block';
+        }
+    }
 </script>

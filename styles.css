@@ -1,4 +1,4 @@
-@media screen and (min-width: 400px) {
+/* @media screen and (min-width: 400px) {
   .topcardholder {
     visibility: hidden;
   }
@@ -9,12 +9,6 @@
     .home {
       display: none;
     }
-    h1 {
-      font-size: 60px;
-    }
-    h2 {
-      font-size: 24px;
-    }
   }
   button {
      padding: 10px 20px;
@@ -22,84 +16,74 @@
       border-radius: 20px;
       width: 120px;
   }
-}
+} */
 
-@media screen and (max-width: 615px) {
-  .topcardholder {
-    visibility: hidden;
+@media screen and (max-width: 790px) {
+  .topcardholder{
+    .card {
+    display: none;
+  }
   }
   .timeline, .timelinetitle {
     display: none;
   }
 }
 
-@media screen and (max-width: 890px) {
+/* @media screen and (max-width: 880px) {
   .topcardholder {
     visibility: hidden;
   }
-  .header-container {
-    h1 {
-      font-size: 60px;
-    }
-    h2 {
-      font-size: 24px;
-    }
-  }
-  
-}
+} */
 
-@media screen and (min-width: 891px) {
-  .topcardholder {
-    visibility: visible;
-  }
-  .header-container {
-    h1 {
-      font-size: 60px;
-    }
-    h2 {
-      font-size: 24px;
-    }
-  }
-  button {
-      padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 20px;
-    width: 200px;
+@media screen and (min-width: 791px) {
+  .topcardholder,{
+     .card {
+    display: block;
+     }
   }
   .header-container {
     .topnav, .dropdown-content, .dropbtn {
       font-size: 20px;
     }
   }
-}
-
-@media screen and (min-width: 950px) {
-  .topcardholder {
-    visibility: visible;
-  }
-  .header-container {
-    h1 {
-      font-size: 65px;
-    }
-    h2 {
-      font-size: 24px;
-    }
+  .timeline, .timelinetitle {
+    display: block;
   }
 }
 
-@media screen and (min-width: 1100px) {
+/* @media screen and (min-width: 950px) {
   .topcardholder {
     visibility: visible;
   }
-  .header-container {
-    h1 {
-      font-size: 75px;
-    }
-    h2 {
-      font-size: 24px;
-    }
+} */
+
+/* @media screen and (min-width: 1100px) {
+  .topcardholder {
+    visibility: visible;
+  }
+} */
+
+@media screen and (max-width: 740px) {
+  .topnav, .dropdown-content, .dropbtn, .topnav a, .donate {
+    display: none;
+  }
+  .smalltopnav {
+    display: block;
+  }
+  .smalldropdown-content {
+    display: none;
   }
 }
+
+@media screen and (min-width: 741px) {
+  .topnav, .dropdown-content, .dropbtn, .topnav a, .donate {
+    display: block;
+  }
+  .smalltopnav, .smalldropdown, .smalldropdown-content, .smalldropbtn {
+    display: none;
+  }
+}
+
 
 .topnav {
   overflow: hidden;
@@ -160,7 +144,12 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-   
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    /* width: 200px; */
+    width: 80%;
+    max-width: 200px;
 }
 button:hover {
     background-color: #ABCAE9;
@@ -188,7 +177,7 @@ h1, h2, h3, h4, h5, h6, p {
 .lower-content {
     text-align: center;
     color: black;
-    padding: 100px 20px;
+    padding:  5px;
     width: 50%;
     margin: 0 auto;
 }
@@ -235,6 +224,13 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: white;
   text-align: center;
   padding-bottom: 20px;
+  min-width: 200px;
+}
+
+@media (max-width: 640px) {
+  .card {
+    width: 50%;
+  }
 }
 
 .card:hover {
@@ -262,9 +258,9 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: center; 
   flex-wrap: wrap;
   /* margin-top: 20px; */
-  position: absolute;
-  top: 650px;
-  z-index: 1;
+  /* position: absolute; */
+  /* top: 650px; */
+  /* z-index: 1; */
 }
 
 .image-wrapper {
@@ -393,21 +389,39 @@ h1, h2, h3, h4, h5, h6, p {
   color: #0065B2;
 }
 
+.smalldropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  /* font-size: 20px; */
+  border: none;
+  /* display: none; */
+}
 
 .dropbtn {
   background-color: transparent;
   color: white;
   padding: 16px;
-  font-size: 20px;
+  /* font-size: 20px; */
   border: none;
 }
 
+/* .smalldropdown {
+  display: inline-block;
+} */
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   /* position: relative; */
   display: inline-block;
 }
-
+.smalldropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#ABCAE9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -417,7 +431,12 @@ h1, h2, h3, h4, h5, h6, p {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
+.smalldropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 /* Links inside the dropdown */
 .dropdown-content a {
   color: white;
@@ -430,10 +449,14 @@ h1, h2, h3, h4, h5, h6, p {
 /* .dropdown-content a:hover {background-color: #ddd;} */
 
 /* Show the dropdown menu on hover */
+/* .smalldropdown:hover .smalldropdown-content {display: block;} */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
+/* .smalldropdown:hover .smalldropbtn {background-color: transparent; color: #0065B2;} */
 .dropdown:hover .dropbtn {background-color: transparent; color: #0065B2;}
+
+
 
 /* * {box-sizing:border-box} */
 
@@ -553,7 +576,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 80%;
   text-align: left;
   border: none;
   outline: none;
@@ -561,7 +584,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.active_accordion, .accordion:hover {
   background-color: #ccc;
 }
 

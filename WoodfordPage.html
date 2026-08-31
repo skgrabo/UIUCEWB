@@ -33,6 +33,28 @@
             <a class="sponsor" href="SponsorPage.html">Sponsor</a>
             <button class="donate" onclick="window.location.href='https://support.ewb-usa.org/'">Donate</button>
         </div>
+        <div class="smalltopnav">
+            <div class="smalldropdown">
+                <button class="smalldropbtn" style=" color: white; " onclick="showcontent()">Menu▾</button>
+                <div class="smalldropdown-content">
+                    <a href="index.html">Home</a>
+                    <br>
+                    <a href="MalawiPage.html">Malawi Structures</a>
+                    <br>
+                    <a href="RwandaPage.html">Rwanda</a>
+                    <br>
+                    <a href="WoodfordPage.html">Woodford Water Supply</a>
+                    <br>
+                    <a href="FundraisingPage.html">Fundraising</a>
+                    <br>
+                    <a href="PastProjectsPage.html">Past Projects</a>
+                    <br>
+                    <a href="VolunteerPage.html">Volunteer</a>
+                    <br>
+                    <a href="SponsorPage.html">Sponsor</a>
+                </div>
+            </div>
+        </div>
         <div class="header-content">
             <h1>Woodford County Water Project</h1>
             <h2>Weekly Meeting Location and Time:
@@ -203,3 +225,14 @@
     </footer>
 </body>
 </html>
+
+<script>
+    function showcontent() {
+        var content = document.querySelector('.smalldropdown-content');
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+        } else {
+            content.style.display = 'block';
+        }
+    }
+</script>
